@@ -1,0 +1,41 @@
+.food-display{
+    margin-top: 30px;
+
+}
+
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight:600;
+}
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+.fetching-message {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+    animation: fade-in 1.5s ease-in-out;
+}
+.verify{
+    min-height: 60vh;
+    display: grid;
+}
+.verify .spinner{
+    width: 100px;
+    height: 100px;
+    place-self: center;
+    border: 5px solid whitesmoke ;
+    border-top-color: tomato;
+    border-radius: 50%;
+    animation: rotate 1s infinite;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
